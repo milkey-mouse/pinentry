@@ -1074,6 +1074,7 @@ dialog_run (pinentry_t pinentry, const char *tty_name, const char *tty_type)
 	  break;
 
 	case '\r':
+	case '\n':
 	  switch (diag.pos)
 	    {
 	    case DIALOG_POS_PIN:
